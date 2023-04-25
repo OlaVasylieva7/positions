@@ -1,0 +1,90 @@
+/* tasks 1 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  border-radius: 4px;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box:nth-child(1) {
+  background-color: palevioletred;
+}
+
+.box:nth-child(2) {
+  background-color: burlywood;
+  top: -70px;
+  left: 100px;
+  z-index: 1;
+}
+
+.box:nth-child(3) {
+  background-color: violet;
+  top: -140px;
+  left: 200px;
+}
+
+/* task 2 */
+
+.thumb {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    background-color: grey;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform: translateX(-85%);
+    transition: transform 300ms ease;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay:hover {
+    transform: translateX(0);
+}
+
+.overlay:hover p {
+    opacity: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+p {
+    writing-mode: vertical-rl;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 400ms ease;
+
+}
+
+.list {
+    padding: 50px;
+}
